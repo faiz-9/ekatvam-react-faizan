@@ -33,7 +33,7 @@ export default function SignUp() {
           initialValues={{ name: "", email: "", password: "" }}
           validationSchema={validationSearch}
           onSubmit={(values, { setSubmitting, resetForm }) => {
-            navigate("/login");
+            navigate("/home");
             setSubmitting(true);
             resetForm();
             setSubmitting(false);
